@@ -19,7 +19,7 @@ exports.create = (req, res) => {
         password: bcrypt.hashSync(req.body.password),
         role: req.body.role ? req.body.role : false,
     };
-
+0
     // proses menyimpan kedalam database
     User.create(user).then((data) => {
         res.json({
